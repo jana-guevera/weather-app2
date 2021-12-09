@@ -5,6 +5,12 @@ const hbs = require("hbs");
 const geocode = require("./utils/geocode.js");
 const forecast = require("./utils/forecast");
 
+var port = 3000;
+
+if(process.env.PORT){
+    port = process.env.PORT;
+}
+
 const app = express();
 
 app.set("view engine", "hbs");
@@ -77,6 +83,6 @@ app.get("*", (req, res) => {
     });
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("The server is listening in port 3000"); 
 });

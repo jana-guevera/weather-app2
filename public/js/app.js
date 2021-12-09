@@ -16,7 +16,7 @@ form.addEventListener("submit", (event) => {
         message1.textContent = "Please provide an address!";
         message1.classList.add("error");
     }else{
-        fetch("http://localhost:3000/weather?address=" + address).then((response) => {
+        fetch("/weather?address=" + address).then((response) => {
             response.json().then((data) => {
                 if(data.error){
                     message1.textContent = data.error;
