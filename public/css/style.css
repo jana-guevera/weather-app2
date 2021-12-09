@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 650px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+h1{
+    font-size: 4.5rem;
+    color: grey;
+    margin: 20px 0;
+}
+
+.nav a{
+    text-decoration: none;
+    color: grey;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+footer{
+    border-top: 1px solid black;
+    padding-top: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.weather-guide{
+    margin: 20px 0;
+}
+
+input[type=text]{
+    padding: 10px 20px;
+}
+
+input[type=submit]{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.message-1, .message-2{
+    margin-top: 10px;
+}
+
+
+.error{
+    color: red;
+}
